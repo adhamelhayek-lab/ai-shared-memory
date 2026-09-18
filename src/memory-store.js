@@ -17,10 +17,10 @@
 // - This layer does NOT expose HTTP.
 // - This layer does NOT execute AI decisions.
 // - Authentication/authorization belong to higher layers.
-
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import crypto from "node:crypto";
 
 import {
   createMemory,
